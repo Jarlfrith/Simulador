@@ -1,0 +1,149 @@
+body {
+  font-family: "Arial", sans-serif;
+  font-size: 20px;
+  color: #000000;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.column {
+  width: 45.7%;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.column-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.column label {
+  display: block;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.column select{
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  font-size: 18px;
+}
+
+.column input[type="number"] {
+  width: 96%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  font-size: 18px;
+}
+
+button#calcular-btn {
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  background-color: #f8d63c;
+  color: #fff;
+  cursor: pointer;
+}
+
+button#modificar-btn {
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  background-color: #3abff0;
+  color: #fff;
+  cursor: pointer;
+}
+
+button#imprimir-btn {
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  background-color: #f8d63c;
+  color: #fff;
+  cursor: pointer;
+}
+
+.table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+.table-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.table th {
+  padding: 9px;
+  text-align: center;
+  border: 1px solid #050505;
+  background-color: #e6e216;
+  font-weight: bold;
+}
+
+.table td {
+  padding: 7px;
+  text-align: left;
+  border: 1px solid #050505;
+}
+
+.texto-informativo {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+/*
+#banner {
+  height: 100px; Ajusta la altura según tu preferencia 
+  background-color: #71b464; /* Color de fondo del banner */
+  /* Otros estilos de posición, márgenes, etc.
+}
+*/

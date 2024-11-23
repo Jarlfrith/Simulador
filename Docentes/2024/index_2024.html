@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>SIMULADOR DOCENTE</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+
+<body>
+  <!--<div id="banner">
+    <img src="ruta-de-la-imagen.jpg" alt="Banner" class="banner-icon">
+  </div>-->
+  <h1 class="title">Simulador Docente 2024</h1>
+  <div class="container">
+    <div class="column">
+      <h2 class="column-title">Datos del funcionario</h2>
+      <label for="tramo"><strong>TRAMO:</strong></label>
+      <select id="tramo">
+        <option value="INICIAL">INICIAL</option>
+        <option value="TEMPRANO">TEMPRANO</option>
+        <option value="AVANZADO">AVANZADO</option>
+        <option value="EXPERTO 1">EXPERTO 1</option>
+        <option value="EXPERTO 2">EXPERTO 2</option>
+      </select>
+      <label for="nivel"><strong>NIVEL:</strong></label>
+      <select id="nivel">
+        <option value="BASICA">BASICA</option>
+        <option value="MEDIA">MEDIA</option>
+      </select>
+      <label for="bienios"><strong>BIENIOS:</strong></label>
+      <input type="number" id="bienios" min="0" max="15">
+      <label for="horas-contrato"><strong>HORAS DE CONTRATO:</strong></label>
+      <input type="number" id="horas-contrato" min="1" max="44">
+      <label for="dias-trabajados"><strong>DIAS TRABAJADOS:</strong></label>
+      <input type="number" id="dias-trabajados" min="1" max="30">
+    </div>
+    <div class="column">
+      <h2 class="column-title">Otros Datos</h2>
+      <label for="brp-titulo"><strong>BRP TITULO:</strong></label>
+      <select id="brp-titulo">
+        <option value="NO">NO</option>
+        <option value="SI">SI</option>
+      </select>
+      <label for="brp-mencion"><strong>BRP MENCION:</strong></label>
+      <select id="brp-mencion">
+        <option value="NO">NO</option>
+        <option value="SI">SI</option>
+      </select>
+      <label for="isla-robinson-crusoe"><strong>ISLA ROBINSON CRUSOE:</strong></label>
+      <select id="isla-robinson-crusoe">
+        <option value="NO">NO</option>
+        <option value="SI">SI</option>
+      </select>
+      <label for="alumnos-prioritarios"><strong>% ALUMNOS PRIORITARIOS:</strong></label>
+      <select id="alumnos-prioritarios">
+        <option value=">60">&gt;60</option>
+        <option value=">80">&gt;80</option>
+        <option value="<60 y >45">&lt;60 y &gt;45</option>
+      </select>
+      <label for="rural"><strong>RURAL:</strong></label>
+      <select id="rural">
+        <option value="NO">NO</option>
+        <option value="SI">SI</option>
+      </select>
+    </div>
+  </div>
+  <button id="calcular-btn">CALCULAR</button>
+  <button id="modificar-btn" style="display: none;">NUEVA SIMULACION</button>
+  <table class="table">
+    <caption class="table-title">RESUMEN SIMULACION</caption>
+    <tr>
+      <th class="column-header">HABER</th>
+      <th class="column-header">MES COMPLETO ($)</th>
+      <th id="dias_work" class="column-header">DIAS TRABAJADOS</th>
+    </tr>
+    <tr id="tb_rbmn">
+      <td>R.B.M.N.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr id="tb_experiencia">
+      <td>EXPERIENCIA (BIENIOS)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr id="tb_brp_titulo">
+      <td>BRP TITULO</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr id="tb_brp_mencion">
+      <td>BRP MENCION</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr id="tb_asig_tramo">
+      <td>ASIG. DE TRAMO PROF. DOCENTE</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr id="tb_asig_alta">
+      <td>ASIG. ALTA CONC. PRIORITARIOS</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr id="tb_zona">
+      <td>COMPLEMENTO DE ZONA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr id="tb_total">
+      <td>TOTAL HABERES:</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr id="tb_liquido">
+      <td>LIQUIDO APROX:</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+  <button id="imprimir-btn" style="display: none;">IMPRIMIR</button>
+  <p id="mensaje" class="texto-informativo" style="display: none;">Tenga presente que debe acreditar sus bienios docentes, su tramo, y sus títulos académicos para obtener las asignaciones respectivas. Recuerde que esta simulación es solo con fines informativos, para mayor detalle contactar con Gestión de Personas.</p>
+  <script src="script.js"></script>
+</body>
+</html>

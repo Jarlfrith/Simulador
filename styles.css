@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.docentes {
+  flex: 1;
+  padding: 1rem;
+  background-color: #e7e5e5;
+}
+
+.aaee {
+  flex: 1;
+  padding: 1rem;
+  background-color: #f0f0f0;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin: 0.5rem 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: #ddd;
+}
